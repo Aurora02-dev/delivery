@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
               "AI-Powered Legal Assistant",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.orange,
+                color: const Color.fromARGB(255, 255, 81, 0),
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
               ),
@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.orange,
+                        backgroundColor: const Color.fromARGB(255, 255, 60, 0),
                       ),
                       child: const Text(
                         "Login",
