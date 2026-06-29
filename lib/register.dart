@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:delivery/login.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -193,33 +193,63 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ],
             ),
 
-            Row(
+            Row (
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {
                     openWebsite('https://www.google.com/');
                   },
-                  icon: const FaIcon(FontAwesomeIcons.google),
+                  icon: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: SvgPicture.asset(
+                      'assets/images/google-icon.svg',
+                      width: 24,
+                      height: 24,
+                    ),
+                  ),
                 ),
 
                 IconButton(
                   onPressed: () {
                     openWebsite('https://www.facebook.com/');
                   },
-                  icon: const FaIcon(FontAwesomeIcons.facebook),
+                  icon: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: SvgPicture.asset(
+                      'assets/images/facebook_logo.svg',
+                      width: 24,
+                      height: 24,
+                    ),
+                  ),
                 ),
 
                 IconButton(
                   onPressed: () {
-                    openWebsite('https://twitter.com/');
+                    openWebsite('https://www.X.com/');
                   },
-                  icon: const FaIcon(FontAwesomeIcons.xTwitter),
+                  icon: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: SvgPicture.asset(
+                      'assets/images/twitter_x_logo.svg',
+                      width: 24,
+                      height: 24,
+                    ),
+                  ),
                 ),
               ],
             ),
-
-            const SizedBox(height: 20),
+            
+          const SizedBox(height: 20),
 
           ],
         ),
